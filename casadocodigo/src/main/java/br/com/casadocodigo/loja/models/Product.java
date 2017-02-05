@@ -1,6 +1,7 @@
 package br.com.casadocodigo.loja.models;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.persistence.ElementCollection;
@@ -12,6 +13,7 @@ import javax.persistence.Lob;
 import javax.validation.constraints.Min;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Product {
@@ -28,6 +30,8 @@ public class Product {
 	private int numberOfPages;
 	@ElementCollection
 	private List<Price> prices = new ArrayList<>();
+	@DateTimeFormat
+	private Calendar releaseDate;
 
 	public Integer getId() {
 		return id;
@@ -60,8 +64,18 @@ public class Product {
 	public void setPrices(List<Price> prices) {
 		this.prices = prices;
 	}
+	
+	public Calendar getReleaseDate() {
+		return releaseDate;
+	}
+	public void setReleaseDate(Calendar releaseDate) {
+		this.releaseDate = releaseDate;
+	}
+	
 	@Override
 	public String toString() {
-		return "Product [title=" + title + ", description=" + description + ", numberOfPages=" + numberOfPages + "]";
+		return "Product [id=" + id + ", title=" + title + ", description="
+				+ description + ", numberOfPages=" + numberOfPages + ", prices="
+				+ prices + ", releaseDate=" + releaseDate + "]";
 	}
 }
