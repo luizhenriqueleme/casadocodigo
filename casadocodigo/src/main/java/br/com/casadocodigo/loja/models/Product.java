@@ -23,7 +23,7 @@ public class Product {
 	private String description;
 	private int numberOfPages;
 	@ElementCollection
-	private List<Price> prices = new ArrayList<Price>();
+	private List<Price> prices = new ArrayList<>();
 
 	public Integer getId() {
 		return id;
