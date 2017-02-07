@@ -1,2 +1,8 @@
 # casadocodigo
-This is a fake project, developed during the Spring Framework course (FJ-27) at Caelum
+Projeto de estudo, desenvolvido durante p curso de Spring Framework (FJ-27) da Caelum.
+
+## Tecnologias usadas no Projeto
+
+Java 8
+Apache Tomcat 8
+MySQL
