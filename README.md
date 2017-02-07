@@ -3,6 +3,6 @@ Projeto de estudo, desenvolvido durante p curso de Spring Framework (FJ-27) da C
 
 ## Tecnologias usadas no Projeto
 
-Java 8
-Apache Tomcat 8
-MySQL
+<p>Java 8</p>
+<p>Apache Tomcat 8</p>
+<p>MySQL</p>
