@@ -32,6 +32,7 @@ public class Product {
 	private List<Price> prices = new ArrayList<>();
 	@DateTimeFormat
 	private Calendar releaseDate;
+	private String summaryPath;
 
 	public Integer getId() {
 		return id;
@@ -72,6 +73,13 @@ public class Product {
 		this.releaseDate = releaseDate;
 	}
 	
+	public String getSummaryPath() {
+		return summaryPath;
+	}
+	public void setSummaryPath(String summaryPath) {
+		this.summaryPath = summaryPath;
+	}
+
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", title=" + title + ", description="
